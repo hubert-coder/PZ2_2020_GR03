@@ -1,1 +1,1 @@
-# projekt_zespolowy_2
+# Strona główna projektu zespołowego

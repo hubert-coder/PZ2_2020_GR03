@@ -18,3 +18,4 @@
  08.06.2020 - Dokumentacja techniczna projektu <br>
  15.06.2020 - Gotowy projekt <br>
 
+Wersja 0.01 - Dodanie opisu biznesowego, założenia oraz funkcji

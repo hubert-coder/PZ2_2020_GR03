@@ -5,7 +5,7 @@
 # Ł.D - Desktop
 
  <s>16.03.2020 - Opis biznesowy projektu, założenia, funkcje</s> <br>
- 23.03.2020 - Wymagania funkcjonalne i niefunkcjonalne, przypadki użycia, diagram przypadków użycia, diagram sekwencji. . Technologia, metodyka, podział pracy, harmonogram <br>
+ 23.03.2020 - <s>Wymagania funkcjonalne i niefunkcjonalne, przypadki użycia, diagram sekwencji . Technologia </s> , metodyka, podział pracy, harmonogram <br>
  30.03.2020 - Testy jednostkowe <br>
  06.04.2020 - Pisanie kodu <br>
  20.04.2020 - Pisanie kodu <br>
@@ -19,3 +19,4 @@
  15.06.2020 - Gotowy projekt <br>
 
 Wersja 0.01 - Dodanie opisu biznesowego, założenia oraz funkcji
+Wersja 0.02 - Dodanie wymagań funkcjonalnych i niefunkcjonalnych, przypadków użycia, diagramu sekwencji ( dla logowania i rejestracji ), technologii

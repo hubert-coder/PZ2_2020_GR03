@@ -16,7 +16,9 @@
  25.05.2020 - Deadline. np. Integracja (zależy od harmonogramu projektu) <br>
  01.06.2020 - Dopracowanie projektu <br>
  08.06.2020 - Dokumentacja techniczna projektu <br>
+ 
  15.06.2020 - Gotowy projekt <br>
 
 Wersja 0.01 - Dodanie opisu biznesowego, założenia oraz funkcji
+<br>
 Wersja 0.02 - Dodanie wymagań funkcjonalnych i niefunkcjonalnych, przypadków użycia, diagramu sekwencji ( dla logowania i rejestracji ), technologii

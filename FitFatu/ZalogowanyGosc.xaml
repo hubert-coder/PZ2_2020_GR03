@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.ZalogowanyGosc">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Wybierz opcję :" FontSize="24" FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="SearchProduct" Clicked="SearchProduct_ClickedAsync" Text="Wyszukaj produkt" HorizontalOptions="FillAndExpand" />
+            <Button x:Name="SearchRecipe" Clicked="SearchRecipe_ClickedAsync" Text="Wyszukaj przepis" />
+            <Button x:Name="CalculateBMI" Clicked="CalculateBMI_Clicked" Text="Oblicz BMI" />
+            <Button x:Name="About" Clicked="About_ClickedAsync" Text="O autorze" />
+            <Button x:Name="LogoutGuest" Clicked="LogoutGuest_ClickedAsync" Text="Zakończ" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

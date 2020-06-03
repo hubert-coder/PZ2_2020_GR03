@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.YourProducts">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Twoje produkty" Margin="0,80,0,0" FontSize="26"
+                
+                HorizontalOptions="CenterAndExpand" TextColor="#42620C" />
+            <Picker x:Name="YourProductsPicker" Focused="YourProductsPicker_Focused" SelectedIndexChanged="YourProductsPicker_SelectedIndexChanged" Title="Twoje produkty" Margin="50,0" />
+            <Label x:Name="NameProductUser" Margin="30,0,0,0" Text="Nazwa : " />
+            <Label x:Name="KcalProductUser" Margin="30,0,0,0" Text="Kcal :" />
+            <Label x:Name="ProteinProductUser" Margin="30,0,0,0" Text="Protein : " />
+            <Label x:Name="FatsProductUser" Margin="30,0,0,0" Text="Fats : " />
+            <Label x:Name="CarbsProductUser" Margin="30,0,0,0" Text="Carbs : " />
+            <Button x:Name="RemoveFromUser" Text="Usuń z listy" Margin="30,50,200,0" Clicked="RemoveFromUser_Clicked"  BackgroundColor="#DA4A4A" FlowDirection="MatchParent"   />
+            
+            <Label x:Name="HiddenID" Text=""  FontSize="0" TextColor="White"/>
+            <Label x:Name="HiddenUser" Text="" FontSize="0" TextColor="White" />
+
+
+            <Button x:Name="GoBack" Margin="30,50,200,35" BackgroundColor="#E2E224" Clicked="GoBack_ClickedAsync"  Text="Powrót do menu"  VerticalOptions="EndAndExpand"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

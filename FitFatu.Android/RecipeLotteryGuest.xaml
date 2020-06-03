@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.RecipeLotteryGuest">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Losuj przepis" FontSize="27" Margin="110,30,0,20" TextColor="#48C143"
+                />
+            <Button x:Name="Lottery" Clicked="Lottery_Clicked" Text="Losuj" BackgroundColor="#6BD1E1" Margin="50,10,50,20" />
+            <Label x:Name="Name" Text="Nazwa : " Margin="30,0,0,0" />
+            <Label x:Name="Portions" Text="Porcje : " Margin="30,0,0,0"/>
+            <Label x:Name="Time" Text="Czas : " Margin="30,0,0,0" />
+            <Label x:Name="Level" Text="Poziom :  " Margin="30,0,0,0" />
+            <Label x:Name="Kcal" Text="Kalorie : " Margin="30,0,0,0" />
+            <Label x:Name="Protein" Text="Białko : " Margin="30,0,0,0" />
+            <Label x:Name="Fats" Text="Tłuszcz : " Margin="30,0,0,0" />
+            <Label x:Name="Carbs" Text="Węglowodany : " Margin="30,0,0,0" />
+            <Label x:Name="Ingredients" Text="Składniki : " Margin="30,0,0,0" />
+            <Label x:Name="Preparation" Text="Przygotowanie : " Margin="30,0,0,0" />
+
+            <Button x:Name="GoBack" Clicked="GoBack_Clicked" Text="Powrót do menu" BackgroundColor="#9A5CDF" Margin="50,40,50,0" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

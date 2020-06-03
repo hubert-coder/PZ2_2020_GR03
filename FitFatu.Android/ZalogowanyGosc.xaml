@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.ZalogowanyGosc"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Witaj gościu, wybierz opcję :" FontSize="24"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="#3C50E1" />
+            <Button x:Name="SearchProduct" Clicked="SearchProduct_ClickedAsync" Text="Wyszukaj produkt" HorizontalOptions="FillAndExpand" Margin="50,0" MinimumHeightRequest="-1" Opacity="1" Padding="0" BackgroundColor="#31A25D" />
+            <Button x:Name="SearchRecipe" Clicked="SearchRecipe_ClickedAsync" BackgroundColor="#24A8C5" Margin="50,0" Text="Wyszukaj przepis" />
+            <Button x:Name="RecipeLottery" Clicked="RecipeLottery_Clicked" Text="Losuj przepis" Margin="50,0" BackgroundColor="#D9B228" />
+            <Button x:Name="CalculateBMI" Clicked="CalculateBMI_Clicked" BackgroundColor="#B9D535" Margin="50,0" Text="Oblicz BMI" />
+            <Button x:Name="About" Clicked="About_ClickedAsync" BackgroundColor="#D08043" Margin="50,0" Text="O autorze" />
+            <Button x:Name="LogoutGuest" Clicked="LogoutGuest_ClickedAsync" BackgroundColor="#663E87" Margin="50,0,50,20" Text="Zakończ" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

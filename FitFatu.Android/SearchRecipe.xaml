@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.SearchRecipt">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Znajdź przepis" Margin="0,80,0,0" FontSize="25" HorizontalOptions="Center" TextColor="#AC39E6" />
+
+            <Picker x:Name="ReciptsList" SelectedIndexChanged="ReciptsList_SelectedIndexChanged" Focused="ReciptsList_Focused" Title="Lista przepisów" HorizontalOptions="CenterAndExpand" VerticalOptions="End" 
+                    />
+            <Label x:Name="NameRecipt" Margin="30,0,0,0" Text="Nazwa przepisu :" />
+            <Label x:Name="PortionRecipt" Margin="30,0,0,0" Text="Liczba porcji :" />
+            <Label x:Name="TimeRecipt" Margin="30,0,0,0" Text="Czas do przygotowania :" />
+            <Label x:Name="LevelRecipt" Margin="30,0,0,0" Text="Poziom przygotowania :" />
+            <Label x:Name="KcalRecipt"  Margin="30,0,0,0" Text="Wartość odżywcza :" />
+            <Label x:Name="ProteinRecipt" Margin="30,0,0,0" Text="Białko ( na 100 g ):" />
+            <Label x:Name="FatsRecipt" Margin="30,0,0,0" Text="Tłuszcz ( na 100 g ) :" />
+            <Label x:Name="CarbsRecipt" Margin="30,0,0,0" Text="Węglowodany ( na 100 g ) :" />
+            <Label x:Name="IngredientsRecipt" Margin="30,0,0,0" Text="Składniki :" />
+            <Label x:Name="PreparationRecipt" Margin="30,0,0,0" Text="Przygotowanie :" />
+            <Button x:Name="PowrotMenuGosc" Margin="30,50,200,0" Clicked="PowrotMenuGosc_ClickedAsync" BackgroundColor="#E2E224" Text="Wróć do menu" HorizontalOptions="Center" 
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

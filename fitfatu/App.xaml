@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:fitfatu"
              StartupUri="przedZalogowaniem.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <BitmapImage x:Key="logo" UriSource="logo\logo.png"></BitmapImage>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

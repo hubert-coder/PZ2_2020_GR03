@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Idealnej Wagi według wzóru Broca</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">licznik-kalorii.pl</a>
+        <a href="produkty.php">produkty</a>
+        <a href="aplikacje.html">aplikacje</a>
+        <a href="#">o projekcie</a>
+
+    </nav>
+    <header>
+        <h1>Kalkulator Idealnej Wagi według wzóru Broca</h1>
+    </header>
+
+    <div class="container">
+        <form>
+            <p>Podaj wzrost w centrymetrach</p>
+            <p><input id="height" type="text" placeholder="Twoj wzrost" /></p>
+
+            <input class="submit" type="button" value="Oblicz" onclick="bmi()" />
+            <p id="result"> </p>
+        </form>
+    </div>
+    <div class="opis">Dzięki poniższemu kalkulatorowi dowiesz się, jaka jest twoja idealna waga w zależności od wzrostu - wedle klasyfikacji BMI. Pamiętaj, że zakresy wagi prawidłowej są nieco szersze: możesz ważyć kilka kilo więcej lub mniej, nadal utrzymując wagę w normie. Poniższy wskaźnik prezentuje wagę idealną. Sprawdź, ile powinnaś/powinieneś ważyć
+        Chcąc poznać swoją idealną wagę wystarczy poniżej wpisać swój wzrost. Nasz kalkulator idealnej wagi potrafi obliczyć wagę do wzrostu. Działanie to jest oparte na równaniu wskaźnika masy ciała (BMI).</div>
+
+    <script>
+        function bmi() {
+            var height = Number(document.getElementById("height").value);
+            var result = (height - 100);
+            document.getElementById("result").innerHTML = "Twoja idealna waga w kilogramach według wzoru Broca-Brugsha to: " + result;
+        }
+
+    </script>
+
+</body>
+
+ 
+
+</html>

@@ -1,0 +1,18 @@
+.col-sm-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result p {
+    font-size: 20px;
+}
+
+#submit {
+    margin: 0 auto;
+    display: block;
+    float: none;
+}

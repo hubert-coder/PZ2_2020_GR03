@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wskaźnik podstawowej przemiany materii - BMR</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">licznik-kalorii.pl</a>
+        <a href="produkty.php">produkty</a>
+        <a href="aplikacje.html">aplikacje</a>
+        <a href="oprojekcie.html">o projekcie</a>
+
+    </nav>
+    <header>
+        <h1>Wskaźnik podstawowej przemiany materii - BMR</h1>
+    </header>
+
+    <div class="container">
+
+        <form>
+            <div class="zawartosc">
+                <p>Płeć</p>
+                <input type="radio" name="options" id="sexF"> Kobieta
+                <input type="radio" name="options" id="sexM"> Mężczyzna
+            </div>
+            <p>Wzrost (cm)</p><input type="number" id="height" class="form-control">
+            <p>Masa ciała (kg)</p><input type="number" id="weight" class="form-control">
+            <p>Wiek (lata)</p><input type="number" id="age" class="form-control">
+            <p>Aktywność fizyczna</p>
+            <select name="choose-acitivity" class="form-control" id="activity">
+                <option value="1">Ćwiczę niewiele lub wcale</option>
+                <option value="2">Ćwiczę umiarkowanie (1 - 3 razy w tygodniu)</option>
+                <option value="3">Ćwiczę dość intensywnie (3 - 5 razy w tygodniu)</option>
+                <option value="4">Ćwiczę ciężko (6 - 7 razy w tygodniu)</option>
+                <option value="5">Ćwiczę bardzo ciężko (praca fizyczna lub ćwiczenia 2 razy dziennie) </option>
+            </select>
+        </form>
+        <button type="submit" class="submit" id="submit">Oblicz</button>
+        <div id="result">
+            <p class="text-center"></p>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            "use strict";
+
+            function _(x) {
+                return document.getElementById(x);
+            }
+
+            function showMe() {
+                var activity = _("activity");
+                var getActivity = activity.options[activity.selectedIndex].innerHTML;
+                var evalActivity = 0;
+                if (getActivity === "Ćwiczę niewiele lub wcale") {
+                    evalActivity = 1.2;
+                } else if (getActivity === "Ćwiczę umiarkowanie (1 - 3 razy w tygodniu)") {
+                    evalActivity = 1.375;
+                } else if (getActivity === "Ćwiczę dość intensywnie (3 - 5 razy w tygodniu)") {
+                    evalActivity = 1.55;
+                } else if (getActivity === "Ćwiczę ciężko (6 - 7 razy w tygodniu)") {
+                    evalActivity = 1.725;
+                } else if (getActivity === "Ćwiczę bardzo ciężko (praca fizyczna lub ćwiczenia 2 razy dziennie) ") {
+                    evalActivity = 1.9;
+                } else {
+                    evalActivity = "coś poszło nie tak!";
+                }
+                var weight = _("weight").value;
+                var age = _("age").value;
+                var height = _("height").value;
+                var bmr = 0;
+
+                if (_("sexF").checked) {
+                    bmr = evalActivity * ((10 * weight) + (6.25 * height) - (5 * age) - 161);
+                } else if (_("sexM").checked) {
+                    bmr = evalActivity * ((10 * weight) + (6.25 * height) - (5 * age) + 5);
+                }
+                var resultWrite = _("result");
+                resultWrite.innerHTML = "Twoja podstawowa przemiana materii to: " + bmr.toFixed(2) + "kcal";
+            }
+            var button = _("submit");
+            button.addEventListener("click", showMe);
+        }());
+
+    </script>
+    <p class="opis">Co to jest kalkulator BMR?
+        To kalkulator zapotrzebowania kalorycznego człowieka, które jest potrzebne aby utrzymywać podstawowe funkcje organizmu zachodzące w układzie nerwowym, wątrobie, nerkach, sercu i pozostałych narządach Twojego ciała.
+        Współczynnik ten określa minimalną ilość kalorii niezbędnych do zachowania podstawowych funkcji organizmu.
+
+        Kalkulator dodatkowo określa niezbędną ilość kalorii i składników pożywienia przy określeniu poziomu Twojej aktywności fizycznej. Podany udział procentowy składników pożywienia zapewnia zdrowy i bezpieczny sposób odżywiania.
+
+        Zalecane tempo utraty masy ciała w wypadku nadwagi i otyłości wynosi ok 2 - 4kg na miesiąc (wyłączając specjalne wskazania medyczne). Przekroczenie tego progu może pociagać za sobą niekorzystne zmiany metaboliczne, niedobory niezbędnych składników odżywczych i zwiększa ryzyko wystąpienia tzw. efektu jojo.</p>
+
+</body>
+
+ 
+
+</html>

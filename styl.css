@@ -1,11 +1,78 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 10px;
     font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    font-size: 1.5rem;
+    margin: 50px auto;
+    letter-spacing: 1px;
+    text-align: center;
+    max-width: 800px;
+    background-color: greenyellow;
+}
+
+.container p {
+    font-weight: bold;
+}
+
+.opis {
+    font-size: 2rem;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.produkty {
+    margin: 50px auto;
+    max-width: 800px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+}
+
+.obrazek {
+    flex: 0 0 30%;
+}
+
+.pojemnik {
+    width: 100%;
+    display: block;
+}
+
+.content {
+    flex: 1;
+    background: #fff;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produkt-opis {
+    font-size: 0.9rem;
+}
+
+
+.szczegol {
+    display: flex;
+    margin-top: auto;
+}
+
+.szczegoly {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 nav {
@@ -25,27 +92,32 @@ nav a {
     margin: 0 20px;
 }
 
+nav a.login {
+    padding: 10px 30px;
+    border: 2px solid #555;
+    margin-right: 50px;
+    margin-left: 80px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
 nav a:hover {
     /*border-bottom: 2px solid #9acd32;*/
     color: yellowgreen;
-    transition: 0.1s;
 }
 
 header {
-    height: 25vh;
-    background-image: url('images/fit3.jpg');
+    height: 15vh;
+    background-image: url('images/img4.jpg');
     background-size: cover;
 }
 
-header a {
-    text-decoration: none;
-}
-
 header h1 {
-    font-size: 6rem;
+    font-size: 3.2rem;
     color: white;
     text-align: center;
-    line-height: 25vh;
+    line-height: 15vh;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.3s;
 }
@@ -54,7 +126,6 @@ header h1:hover {
     background-color: rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     color: ghostwhite;
-    font-size: 5.5rem;
 }
 
 main {
@@ -92,35 +163,6 @@ main div.feature {
 
 }
 
-main div.image1 {
-    height: 200px;
-    background-color: royalblue;
-    background-image: url('images/orange.jpg');
-    margin: 20px 30px;
-    background-size: cover;
-}
-
-div.image2 {
-    height: 200px;
-    background-image: url("images/image3.jpg");
-    margin: 20px 30px;
-    background-size: cover;
-}
-
-div.image3 {
-    height: 200px;
-    background-image: url("images/image2.jpg");
-    margin: 20px 30px;
-    background-size: cover;
-}
-
-div.image4 {
-    height: 200px;
-    background-image: url("images/img5.jpg");
-    margin: 20px 30px;
-    background-size: cover;
-}
-
 main h2 {
     font-size: 2rem;
     text-align: center;
@@ -130,6 +172,19 @@ main h2 {
 
 }
 
+table {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    width: 70vw;
+}
+
+th {
+    background-color: greenyellow;
+    color: white;
+}
+
 
 main h3 {
     font-size: 4rem;
@@ -137,7 +192,6 @@ main h3 {
     padding: 50px 0 20px 0;
     color: #222;
 }
-
 
 main a {
     text-decoration: none;

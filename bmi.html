@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator BMI</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">licznik-kalorii.pl</a>
+        <a href="produkty.php">produkty</a>
+        <a href="aplikacje.html">aplikacje</a>
+        <a href="oprojekcie.html">o projekcie</a>
+    </nav>
+    <header>
+        <h1>Kalkulator BMI</h1>
+    </header>
+
+
+    <div class="container">
+        <form>
+            <p>Waga</p>
+            <p><input id="weight" type="text" placeholder="Twoja waga w kilogramach" /></p>
+            <p>Wzrost</p>
+            <p><input id="height" type="text" placeholder="Twój wzrost, np. 1.80" /></p>
+            <input class="submit" type="button" value="Sprawdź" onclick="bmi()" />
+            <p id="result"> </p>
+        </form>
+    </div>
+    <div class="opis">
+        <p>BMI (Body Mass Index) czyli Wskaźnik masy ciała jest prostym, jednak niedokładnym wskaźnikiem niedowagi i nadwagi oraz ryzyk chorób z nimi związanych. Wskaźnik ten należy stosować tylko dla osób dorosłych, więc nie należy obliczać go dla dzieci. Nasz Kalkulator BMI w prosty sposób pomoże Ci określić czy masz prawidłową wagę. Kalkulator może być stosowany zarówno dla kobiet jak i mężczyzn. Wypełnij pola masa ciała, wzrost oraz płeć i w łatwy sposób oblicz BMI! BMI jest jednym z ważnych wskaźniów określających nasz stan fizyczny, ale niestety nie wystarczającym. Bardzo ważnym uzupełnieniem BMI jest wskaźnik ilości tłuszczu brzusznego - zbyt duży może oznaczać niebezpieczną otyłość brzuszną i to nawet przy prawidłowym BMI! Ponadto, paradoksalnie, badania naukowe wskazują, że osoby z lekką nadwagą zwykle są zdrowsze i żyją dłużej od osób z tzw. "prawidłową wagą". Pojawiają się nawet głosy, że ustalony arbitralnie przez WHO próg nadwagi (25)jest zbyt niski.</p>
+        <h1>Zakresy wartości BMI:</h1>
+        <p>mniej niż 16 - wygłodzenie</p>
+        <p>16 - 16.99 - wychudzenie</p>
+        <p>17 - 18.49 - niedowaga</p>
+        <p>18.5 - 24.99 - wartość prawidłowa</p>
+        <p>25 - 29.99 - nadwaga</p>
+        <p>30 - 34.99 - I stopień otyłości</p>
+        <p>35 - 39.99 - II stopień otyłości</p>
+        powyżej 40 - otyłość skrajna
+    </div>
+    <script>
+        function bmi() {
+            var height = Number(document.getElementById("height").value);
+            var weight = Number(document.getElementById("weight").value);
+            var result = weight / (height * height);
+            document.getElementById("result").innerHTML = "Twój wynik BMI to: " + result;
+        }
+
+    </script>
+
+
+</body>
+
+ 
+
+</html>

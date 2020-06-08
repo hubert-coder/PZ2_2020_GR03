@@ -1,0 +1,92 @@
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\fitfatu.exe.config
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\fitfatu.exe
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\fitfatu.pdb
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\fitfatu.csprojAssemblyReference.cache
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\przedZalogowaniem.g.cs
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\poZalogowaniu.g.cs
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\App.g.cs
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\fitfatu_MarkupCompile.cache
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\fitfatu_MarkupCompile.lref
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\przedZalogowaniem.baml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\poZalogowaniu.baml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\fitfatu.g.resources
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\fitfatu.Properties.Resources.resources
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\fitfatu.csproj.GenerateResource.cache
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\fitfatu.exe
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\fitfatu.pdb
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\oknoDodaniaPotraw.g.cs
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\oknoDodaniaPotraw.baml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\BouncyCastle.Crypto.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\Google.Protobuf.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\MySql.Data.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\Renci.SshNet.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Data.SqlClient.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\Ubiety.Dns.Core.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\Google.Protobuf.xml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\MySql.Data.xml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\Renci.SshNet.xml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Data.SqlClient.xml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\obj\Debug\fitfatu.csproj.CopyComplete
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\BCrypt.Net-Next.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Buffers.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Memory.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Numerics.Vectors.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\BCrypt.Net-Next.xml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Buffers.xml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Memory.xml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Numerics.Vectors.xml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\MaterialDesignColors.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\MaterialDesignColors.pdb
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Programowanie\C#\Test folder\fitfatu\fitfatu\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\fitfatu.exe.config
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\fitfatu.exe
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\fitfatu.pdb
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\Google.Protobuf.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\MaterialDesignColors.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\MySql.Data.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\Renci.SshNet.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Buffers.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Data.SqlClient.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Memory.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\Google.Protobuf.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\MaterialDesignColors.pdb
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\MySql.Data.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\Renci.SshNet.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Buffers.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Data.SqlClient.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Memory.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu.csprojAssemblyReference.cache
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\oknoDodaniaPotraw.g.cs
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\przedZalogowaniem.g.cs
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\poZalogowaniu.g.cs
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\App.g.cs
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu_MarkupCompile.cache
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu_MarkupCompile.lref
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\oknoDodaniaPotraw.baml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\przedZalogowaniem.baml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\poZalogowaniu.baml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu.g.resources
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu.Properties.Resources.resources
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu.csproj.GenerateResource.cache
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu.csproj.CoreCompileInputs.cache
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu.csproj.CopyComplete
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu.exe
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\fitfatu.pdb
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\oknoUsuwaniePotraw.g.cs
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\oknoUsuwaniePotraw.baml
+C:\Users\ZeeWo\OneDrive\Pulpit\ProjektZespołowy\fitfatu\fitfatu\obj\Debug\App.baml

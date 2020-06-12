@@ -1,8 +1,8 @@
 # Strona główna projektu zespołowego ( FitFatu - licznik kalorii )
-Łukasz Darmochwał – aplikacja desktopowa, lider grupy
-Michał Abramczyk – strona WWW
-Hubert Dymnicki – aplikacja mobilna, opiekun repozytorium
-Krystian Daniel Duda – aplikacja desktopowa, baza danych, support w poszczególnych składowych systemu
+Łukasz Darmochwał – aplikacja desktopowa, lider grupy <br>
+Michał Abramczyk – strona WWW <br>
+Hubert Dymnicki – aplikacja mobilna, opiekun repozytorium <br>
+Krystian Daniel Duda – aplikacja desktopowa, baza danych, support w poszczególnych składowych systemu 
 <br>
 
 

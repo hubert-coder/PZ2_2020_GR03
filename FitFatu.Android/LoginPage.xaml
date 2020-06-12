@@ -10,8 +10,8 @@
             <Label Text="Logowanie" FontSize="26" Margin="120,30,0,20" TextColor="#C82A2A" />
             <Label Text="Podaj swoje dane logowania" FontSize="18" Margin="60,0,40,0" TextColor="#647345" />
             
-                <Entry x:Name="Entry_Login" Text="{Binding Login}" Placeholder="Login" Completed="Entry_Login_Completed" Margin="50,0" />
-            <Entry x:Name="Entry_Password" Text="{Binding Password}" Placeholder="Hasło" IsPassword="True" Completed="Entry_Password_Completed" Margin="50,0" />
+                <Entry x:Name="Entry_Login"  Placeholder="Login" Completed="Entry_Login_Completed" Margin="50,0" />
+            <Entry x:Name="Entry_Password"  Placeholder="Hasło" IsPassword="True" Completed="Entry_Password_Completed" Margin="50,0" />
             <Button x:Name="Login_User" Text="Zaloguj się"  Clicked="Login_User_Clicked" Margin="75,0" BackgroundColor="#75B8C6"/>
 
             <Button x:Name="GoBack" Clicked="GoBack_Clicked" Text="Powróć do menu"  Margin="80,150,80,0"  BackgroundColor="#E2E224" />

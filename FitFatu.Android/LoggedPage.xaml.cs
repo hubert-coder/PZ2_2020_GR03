@@ -23,7 +23,7 @@ namespace FitFatu
         {
             InitializeComponent();
 
-            MenuTitle.Text = "Witaj : " + LoggedUserMenu.identity;
+            MenuTitle.Text = "Witaj, wybierz opcję :";
         }
 
         private async void AddRecipt_ClickedAsync(object sender, EventArgs e)
@@ -53,18 +53,15 @@ namespace FitFatu
 
         private void CalculateBMI_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new CalculateBMI());
+            Navigation.PushModalAsync(new CalculateBMIUser());
         }
 
         private void About_Clicked(object sender, EventArgs e)
         {
-
+            DisplayAlert("O autorze : ", "Dymnicki Hubert, 2020 © ", "OK");
         }
 
-        private void LogoutGuest_Clicked(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void LogoutUser_Clicked(object sender, EventArgs e)
         {
@@ -73,9 +70,11 @@ namespace FitFatu
             Navigation.PushModalAsync(new MainPage());
         }
 
-        private void SearchReciptKcal_Clicked()
-        {
+        
 
+        private void RecipeLotteryUser_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new RecipeLotteryUser());
         }
     }
 }

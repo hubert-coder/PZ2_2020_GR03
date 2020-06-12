@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.CalculateBMIUser">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Kalkulator BMI" FontSize="26" Margin="100,30,0,0" TextColor="#324AAC"
+                 />
+            <Label Text="Twoja masa ( kg )"  FontSize="20" Padding="50,0,0,0"/>
+            <Entry x:Name="Weight_BMI" Placeholder="Podaj wagę..." Keyboard="Numeric" Completed="Weight_Completed" Margin="50,0" />
+            <Label Text="Twój wzrost ( m )" FontSize="20" Padding="50,0,0,0" />
+            <Entry x:Name="Height_BMI" Placeholder="Podaj wzrost..." Keyboard="Numeric" Completed="Height_Completed" Margin="50,0" />
+            <Button x:Name="Calculate_BMI" Clicked="Calculate_BMI_Clicked" Text="Oblicz BMI" Margin="80,0" BackgroundColor="#58CB24" />
+            <Label x:Name="Your_BMI" FontSize="18" Text="Twoje BMI" Margin="0,20,0,0" />
+            <Label x:Name="Description_BMI" FontSize="18" Text="Opis o BMI" Margin="0,20,0,0" />
+            <Button x:Name="GoBack" Clicked="GoBack_ClickedAsync"  Text="Powrót do menu"  VerticalOptions="EndAndExpand" Padding="0" Margin="80,0,80,30" BackgroundColor="#DF277E"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -7,7 +7,7 @@
              x:Class="FitFatu.YourRecipts">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Twoje przepisy :" Margin="0,80,0,0" FontSize="26"
+            <Label Text="Twoje przepisy :" Margin="0,40,0,0" FontSize="26"
                  
                 HorizontalOptions="CenterAndExpand" TextColor="#2727ED" />
             <Picker x:Name="YourReciptsPicker"   Focused="YourReciptsPicker_Focused" SelectedIndexChanged="YourReciptsPicker_SelectedIndexChanged" Title="Twoje przepisy" Margin="50,0" />
@@ -27,7 +27,7 @@
             <Label x:Name="HiddenUser" Text="" FontSize="0" />
 
 
-            <Button x:Name="GoBack" Margin="30,30,200,0" BackgroundColor="#E2E224" Clicked="GoBack_ClickedAsync" Text="Powrót do menu" />
+            <Button x:Name="GoBack" Margin="30,0,200,0" BackgroundColor="#E2E224" Clicked="GoBack_ClickedAsync" Text="Powrót do menu" />
         </StackLayout>
         
     </ContentPage.Content>

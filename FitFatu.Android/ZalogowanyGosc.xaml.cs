@@ -31,11 +31,19 @@ namespace FitFatu
 
         private async void LogoutGuest_ClickedAsync(object sender, EventArgs e)
         {
-            String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
-            MySqlConnection Polaczenie = new MySqlConnection(cos);
-            Polaczenie.Close();
-            await DisplayAlert("Powiadomienie", "Połączenie zostało zakończone", "OK");
-            await Navigation.PushModalAsync(new MainPage());
+            try
+            {
+
+                String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
+                MySqlConnection Polaczenie = new MySqlConnection(cos);
+                Polaczenie.Close();
+                await DisplayAlert("Powiadomienie", "Połączenie zostało zakończone", "OK");
+                await Navigation.PushModalAsync(new MainPage());
+            }
+            catch(Exception ex)
+            {
+             await   DisplayAlert("Powiadomienie", "Sprawdź połączenie z internetem", "OK");
+            }
         }
 
         private async void SearchRecipe_ClickedAsync(object sender, EventArgs e)

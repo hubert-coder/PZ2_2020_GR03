@@ -29,6 +29,9 @@ namespace FitFatu
 
         private async void Guest_ClickedAsync(object sender, EventArgs e)
         {
+
+
+
             MySqlConnection connect;
 
 
@@ -47,23 +50,38 @@ namespace FitFatu
             try
             {
                 connect.Open();
+                await Navigation.PushModalAsync(new ZalogowanyGosc());
             }
             catch (MySqlException ex)
             {
-                await DisplayAlert("Powiadomienie", "Źle", "OK");
+                await DisplayAlert("Powiadomienie", "Sprawdź połączenie z internetem", "OK");
             }
             
-            await Navigation.PushModalAsync(new ZalogowanyGosc());
+            
 
 
         }
 
         private async void User_ClickedAsync(object sender, EventArgs e)
         {
-            String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
-            MySqlConnection Polaczenie = new MySqlConnection(cos);
-            Polaczenie.Open();
-            await Navigation.PushModalAsync(new LoginPage());
+
+            try
+            {
+                String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
+                MySqlConnection Polaczenie = new MySqlConnection(cos);
+                Polaczenie.Open();
+                await Navigation.PushModalAsync(new LoginPage());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Powiadomienie", "Sprawdź połączenie z internetem", "OK");
+
+            }
+        }
+
+        private void Exit_Clicked(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.GetCurrentProcess().Kill();
         }
     }
 }

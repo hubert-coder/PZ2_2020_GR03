@@ -15,7 +15,8 @@
         
         <Button x:Name="Guest" Clicked="Guest_ClickedAsync" Text="Przeglądaj jako gość" />
         <Button x:Name="User" Clicked="User_ClickedAsync"  Text="Zaloguj się" />
-        
+        <Button x:Name="Exit" Clicked="Exit_Clicked" Text="Zakończ" />
+
     </StackLayout>
 
 </ContentPage>

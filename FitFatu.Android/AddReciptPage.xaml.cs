@@ -35,23 +35,30 @@ namespace FitFatu
 
         private async void SendRecipt_ClickedAsync(object sender, EventArgs e)
         {
-            if (ReciptName.Text != null || ReciptText.Text != null)
+            try
             {
+                if (ReciptName.Text != null || ReciptText.Text != null)
+                {
 
-                String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
-                MySqlConnection Polaczenie = new MySqlConnection(cos);
-                string query = "INSERT INTO Przepisy(Nazwa, Przygotowanie) VALUES (@Nazwa, @Przygotowanie)";
-                MySqlCommand myCommand = new MySqlCommand(query, Polaczenie);
-                myCommand.Parameters.AddWithValue("@Nazwa", ReciptName.Text);
-                myCommand.Parameters.AddWithValue("@Przygotowanie", ReciptText.Text);
-                Polaczenie.Open();
-                myCommand.ExecuteNonQuery();
-                Polaczenie.Close();
-                await DisplayAlert("Informacja", "OK", "OK");
+                    String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
+                    MySqlConnection Polaczenie = new MySqlConnection(cos);
+                    string query = "INSERT INTO Przepisy(Nazwa, Przygotowanie) VALUES (@Nazwa, @Przygotowanie)";
+                    MySqlCommand myCommand = new MySqlCommand(query, Polaczenie);
+                    myCommand.Parameters.AddWithValue("@Nazwa", ReciptName.Text);
+                    myCommand.Parameters.AddWithValue("@Przygotowanie", ReciptText.Text);
+                    Polaczenie.Open();
+                    myCommand.ExecuteNonQuery();
+                    Polaczenie.Close();
+                    await DisplayAlert("Informacja", "OK", "OK");
+                }
+                else
+                {
+                    await DisplayAlert("Informacja", "Podaj dane do przepisu", "OK");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                await DisplayAlert("Informacja", "Podaj dane do przepisu", "OK");
+                await DisplayAlert("Powiadomienie", "Sprawdź połączenie z internetem", "OK");
             }
         }
 

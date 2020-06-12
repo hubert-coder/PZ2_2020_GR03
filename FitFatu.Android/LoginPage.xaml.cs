@@ -61,134 +61,157 @@ namespace FitFatu
             await Navigation.PushModalAsync(new LoggedPage());
         }
 
-        public async void Login_User_Clicked(object sender, EventArgs e)
+        public  void Login_User_Clicked(object sender, EventArgs e)
         {
-            string hashed_password = "";
-            int local_id = 0;
-            String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
-            MySqlConnection Polaczenie = new MySqlConnection(cos);
-            string query = "SELECT Password FROM Users WHERE Login=@LogUser";  
-            MySqlCommand myCommand = new MySqlCommand(query, Polaczenie);
-            myCommand.Parameters.AddWithValue("@LogUser", Entry_Login.Text);
-
-            Polaczenie.Open();
-            MySqlDataReader dataReader = myCommand.ExecuteReader();
 
             try
             {
-                while (dataReader.Read())
+
+
+
+                string hashed_password = "";
+                int local_id = 0;
+                String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
+                MySqlConnection Polaczenie = new MySqlConnection(cos);
+                string query = "SELECT Password FROM Users WHERE Login=@LogUser";
+                MySqlCommand myCommand = new MySqlCommand(query, Polaczenie);
+                myCommand.Parameters.AddWithValue("@LogUser", Entry_Login.Text);
+
+                Polaczenie.Open();
+                MySqlDataReader dataReader = myCommand.ExecuteReader();
+
+                try
                 {
-                    string password = dataReader["Password"].ToString();
-
-                    LoggedUser p = new LoggedUser(password);
-
-                    User.Add(p);
-
-                }
-            }
-            catch(Exception ex)
-            {
-                await DisplayAlert("Informacja", "Wystąpił błąd", "OK");
-
-            }
-
-
-            try
-            {
-                foreach(LoggedUser hashed in User)
-                {
-
-                    hashed_password = hashed.User_Password;
-                }
-
-            }
-            catch(Exception ex)
-            {
-
-
-            }
-
-
-           
-            if(Entry_Password.Text == null)
-            {
-                await DisplayAlert("Informacja", "Podaj hasło", "OK");
-                
-
-            }
-
-
-            string hash_pass = hashed_password;
-
-            Polaczenie.Close();
-            if (Entry_Password.Text != null)
-            {
-
-
-                if (BCrypt.CheckPassword(Entry_Password.Text, hash_pass))
-                {
-
-                    await DisplayAlert("Informacja", "Pomyślne zalogowanie", "OK");
-
-
-
-
-
-                    string query_2 = "SELECT IdUser FROM Users WHERE Login=@LogUser";
-                    MySqlCommand myCommand_2 = new MySqlCommand(query_2, Polaczenie);
-                    myCommand_2.Parameters.AddWithValue("@LogUser", Entry_Login.Text);
-                    Polaczenie.Open();
-
-                    MySqlDataReader dataReader_2 = myCommand_2.ExecuteReader();
-
-                    try
+                    while (dataReader.Read())
                     {
-                        while (dataReader_2.Read())
+                        string password = dataReader["Password"].ToString();
+
+                        LoggedUser p = new LoggedUser(password);
+
+                        User.Add(p);
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    DisplayAlert("Informacja", "Wystąpił błąd", "OK");
+                    Polaczenie.Close();
+
+
+                }
+
+
+
+                try
+                {
+                    foreach (LoggedUser hashed in User)
+                    {
+
+                        hashed_password = hashed.User_Password;
+
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Polaczenie.Close();
+
+
+                }
+
+                if (Entry_Password.Text == null)
+                {
+                    DisplayAlert("Informacja", "Podaj hasło", "OK");
+
+
+                }
+                if (Entry_Login.Text == null)
+                {
+                    DisplayAlert("Informacja", "Podaj login", "OK");
+
+
+                }
+
+                string hash_pass = hashed_password;
+                Polaczenie.Close();
+                try
+                {
+                    if (BCrypt.CheckPassword(Entry_Password.Text, hash_pass))
+                    {
+                        string query_2 = "SELECT IdUser FROM Users WHERE Login=@LogUser";
+                        MySqlCommand myCommand_2 = new MySqlCommand(query_2, Polaczenie);
+                        myCommand_2.Parameters.AddWithValue("@LogUser", Entry_Login.Text);
+                        Polaczenie.Open();
+
+                        MySqlDataReader dataReader_2 = myCommand_2.ExecuteReader();
+
+                        try
                         {
-                            int id_user = (int)dataReader_2["IdUser"];
+                            while (dataReader_2.Read())
+                            {
+                                int id_user = (int)dataReader_2["IdUser"];
 
-                            IntegerUser abc = new IntegerUser(id_user);
+                                IntegerUser abc = new IntegerUser(id_user);
 
-                            Id_Users.Add(abc);
+                                Id_Users.Add(abc);
+
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            DisplayAlert("Informacja", "Wystąpił błąd", "OK");
 
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        await DisplayAlert("Informacja", "Wystąpił błąd", "OK");
 
-                    }
-
-
-                    try
-                    {
-                        foreach (IntegerUser identify in Id_Users)
+                        try
                         {
-                            local_id = identify.id_user;
+                            foreach (IntegerUser identify in Id_Users)
+                            {
+                                local_id = identify.id_user;
+
+                            }
 
                         }
+                        catch (Exception ex)
+                        {
+                            Polaczenie.Close();
+
+                        }
+                        LoggedUserMenu.identity = local_id;
+
+
+
+                        Navigation.PushModalAsync(new LoggedPage());
+
 
                     }
-                    catch (Exception ex)
+                    else
                     {
 
-
+                        Polaczenie.Close();
                     }
-                    LoggedUserMenu.identity = local_id;
-
-
-
-                    await Navigation.PushModalAsync(new LoggedPage());
-
                 }
-                else
+                catch (Exception ex)
                 {
-                    await DisplayAlert("Informacja", "Nieprawidłowe dane", "OK");
+                    DisplayAlert("Informacja", ex.ToString(), "OK");
+                    Polaczenie.Close();
 
                 }
+
+
+
+
+
+
+
+                Polaczenie.Close();
+
             }
+            catch (Exception ex)
+            {
+                DisplayAlert("Powiadomienie", "Sprawdź połączenie z internetem", "OK");
 
-
+            }
         }
 
         private void Entry_Login_Completed(object sender, EventArgs e)

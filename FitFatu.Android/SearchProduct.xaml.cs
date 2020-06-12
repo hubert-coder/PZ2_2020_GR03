@@ -30,88 +30,18 @@ namespace FitFatu
             Produkt = new List<Produkty>();
 
 
-        }
-
-
-
-        private async void PowrotMenuGosc_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new ZalogowanyGosc());
-        }
-
-        private void SelectSQL_Clicked(object sender, EventArgs e)
-        {
-            
-        }
-
-        
-
-        private void ProductsName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int loading_products = 0;
-            String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
-            MySqlConnection Polaczenie = new MySqlConnection(cos);
-           string SelectedProduct =  ProductsName.SelectedItem.ToString();
-            string query = "SELECT * FROM Produkty WHERE Nazwa=@SelectedProduct";
-            MySqlCommand myCommand = new MySqlCommand(query, Polaczenie);
-            myCommand.Parameters.AddWithValue("@SelectedProduct", ProductsName.SelectedItem.ToString());
-
-            if (loading_products == 0)
-            {
-                loading_products = 1;
-                Polaczenie.Open();
-
-                MySqlDataReader dataReader = myCommand.ExecuteReader();
-
-
-                while (dataReader.Read())
-                {
-                    int id = (int)dataReader["IdProduktu"];
-                    string name = dataReader["Nazwa"].ToString();
-                    float kcal = (float)dataReader["Kcal"];
-                    float protein = (float)dataReader["Protein"];
-                    float fats = (float)dataReader["Fats"];
-                    float carbs = (float)dataReader["Carbs"];
-
-                    Produkty p = new Produkty(id, name, kcal, protein, fats, carbs);
-
-                    Produkt.Add(p);
-                }
-            }
             try
             {
-                foreach (Produkty xd in Produkt)
-                {
-                    
-                    NameProduct.Text = "Nazwa produktu : " + xd.Nazwa;
-                    KcalProduct.Text = "Wartość kaloryczna : " + xd.Kcal.ToString();
-                    ProteinProduct.Text = "Białko : " + xd.Protein.ToString();
-                    FatsProduct.Text = "Tłuszcz : " + xd.Fats.ToString();
-                    CarbsProduct.Text = "Węglowodany : " + xd.Carbs.ToString();
 
-                    
-                }
-            }
-            catch (Exception ex)
-            {
 
-            }
-            Polaczenie.Close();
-        }
+                String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
+                MySqlConnection Polaczenie = new MySqlConnection(cos);
+                string query = "SELECT * FROM Produkty";
+                MySqlCommand myCommand = new MySqlCommand(query, Polaczenie);
 
-        private void ProductsName_Focused(object sender, FocusEventArgs e)
-        {
-            int loading_products = 0;
 
-            String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
-            MySqlConnection Polaczenie = new MySqlConnection(cos);
-            string query = "SELECT * FROM Produkty";
-            MySqlCommand myCommand = new MySqlCommand(query, Polaczenie);
-
-            if (loading_products == 0)
-            {
                 Polaczenie.Open();
-                loading_products = 1;
+
                 MySqlDataReader dataReader = myCommand.ExecuteReader();
                 while (dataReader.Read())
                 {
@@ -146,9 +76,92 @@ namespace FitFatu
 
                 //close Connection
                 Polaczenie.Close();
+
             }
-            //return list to be displayed
-            // return list;
+            catch (Exception ex)
+            {
+                DisplayAlert("Powiadomienie", "Sprawdź połączenie z internetem", "OK");
+            }
+
+        }
+
+
+
+        private async void PowrotMenuGosc_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ZalogowanyGosc());
+        }
+
+        private void SelectSQL_Clicked(object sender, EventArgs e)
+        {
+            
+        }
+
+        
+
+        private void ProductsName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int loading_products = 0;
+                String cos = "server=licznik-kalorii.cba.pl;uid=czerwonysandal;pwd=NiebieskiK2losz;database=gymrun_project;";
+                MySqlConnection Polaczenie = new MySqlConnection(cos);
+                string SelectedProduct = ProductsName.SelectedItem.ToString();
+                string query = "SELECT * FROM Produkty WHERE Nazwa=@SelectedProduct";
+                MySqlCommand myCommand = new MySqlCommand(query, Polaczenie);
+                myCommand.Parameters.AddWithValue("@SelectedProduct", ProductsName.SelectedItem.ToString());
+
+                if (loading_products == 0)
+                {
+                    loading_products = 1;
+                    Polaczenie.Open();
+
+                    MySqlDataReader dataReader = myCommand.ExecuteReader();
+
+
+                    while (dataReader.Read())
+                    {
+                        int id = (int)dataReader["IdProduktu"];
+                        string name = dataReader["Nazwa"].ToString();
+                        float kcal = (float)dataReader["Kcal"];
+                        float protein = (float)dataReader["Protein"];
+                        float fats = (float)dataReader["Fats"];
+                        float carbs = (float)dataReader["Carbs"];
+
+                        Produkty p = new Produkty(id, name, kcal, protein, fats, carbs);
+
+                        Produkt.Add(p);
+                    }
+                }
+                try
+                {
+                    foreach (Produkty xd in Produkt)
+                    {
+
+                        NameProduct.Text = "Nazwa produktu : " + xd.Nazwa;
+                        KcalProduct.Text = "Wartość kaloryczna : " + xd.Kcal.ToString();
+                        ProteinProduct.Text = "Białko : " + xd.Protein.ToString();
+                        FatsProduct.Text = "Tłuszcz : " + xd.Fats.ToString();
+                        CarbsProduct.Text = "Węglowodany : " + xd.Carbs.ToString();
+
+
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+                Polaczenie.Close();
+            }
+            catch(Exception ex)
+            {
+                DisplayAlert("Powiadomienie", "Sprawdź połączenie z internetem", "OK");
+            }
+        }
+
+        private void ProductsName_Focused(object sender, FocusEventArgs e)
+        {
+           
         }
     }
 }

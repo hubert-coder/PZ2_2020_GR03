@@ -16,7 +16,7 @@ Krystian Daniel Duda – aplikacja desktopowa, baza danych, support w poszczegó
 
 ## Aplikacja mobilna : [FitFatu for Android](https://github.com/hubert-coder/PZ2_2020_GR03/blob/Android/FitFatu%20Final.apk)
 
-
+## Dokumentacja : [KLIK](https://github.com/hubert-coder/PZ2_2020_GR03/blob/master/Dokumentacja%20ko%C5%84cowa.pdf)
 
 ## Harmonogram i wersje projektu :
 

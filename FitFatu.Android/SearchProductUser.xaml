@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.SearchProductUser">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Znajdź produkt" TextColor="#7FC31B" FontSize="25" HorizontalOptions="Center" Margin="0,80,0,0" />
+
+            <Picker x:Name="ProductsNameUser" Title="Lista produktów"  SelectedIndexChanged="ProductsNameUser_SelectedIndexChanged"  Focused="ProductsNameUser_Focused"  HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="50,0" TranslationX="0" 
+             />
+            
+            <Label x:Name="NameProductUser" Text="Nazwa : " Margin="30,20,0,0" />
+            <Label x:Name="KcalProductUser" Text="Kcal :" Margin="30,0,0,0" />
+            <Label x:Name="ProteinProductUser" Text="Protein : " Margin="30,0,0,0" />
+            <Label x:Name="FatsProductUser" Text="Fats : "  Margin="30,0,0,0"/>
+            <Label x:Name="CarbsProductUser" Text="Carbs : " Margin="30,0,0,0" />
+            <Button x:Name="AddToUser" Text="Dodaj do listy" Margin="30,50,200,0" Clicked="AddToUser_Clicked" BackgroundColor="#7FC31B" FlowDirection="MatchParent"   />
+            <Button x:Name="PowrotMenuUser" WidthRequest="100" HeightRequest="30" Clicked="PowrotMenuUser_Clicked" BackgroundColor="#E2E224"   Text="Wróć do menu" 
+                    
+                    Margin="30,30,200,0" IsTabStop="False" Padding="0" FontSize="Small" TextColor="#000000"    />
+            <Label x:Name="HiddenID" Text=""  FontSize="0" TextColor="White"/>
+            <Label x:Name="HiddenUser" Text="" FontSize="0" TextColor="White" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

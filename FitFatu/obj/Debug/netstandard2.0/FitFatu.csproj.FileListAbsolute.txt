@@ -1,0 +1,12 @@
+E:\Projekty\FitFatu\FitFatu\FitFatu\bin\Debug\netstandard2.0\FitFatu.deps.json
+E:\Projekty\FitFatu\FitFatu\FitFatu\bin\Debug\netstandard2.0\FitFatu.dll
+E:\Projekty\FitFatu\FitFatu\FitFatu\obj\Debug\netstandard2.0\FitFatu.AssemblyInfoInputs.cache
+E:\Projekty\FitFatu\FitFatu\FitFatu\obj\Debug\netstandard2.0\FitFatu.AssemblyInfo.cs
+E:\Projekty\FitFatu\FitFatu\FitFatu\obj\Debug\netstandard2.0\FitFatu.dll
+E:\Projekty\FitFatu\FitFatu\FitFatu\obj\Debug\netstandard2.0\ref\FitFatu.dll
+E:\Projekty\FitFatu\FitFatu\FitFatu\obj\Debug\netstandard2.0\FitFatu.pdb
+E:\Projekty\FitFatu\FitFatu\FitFatu\bin\Debug\netstandard2.0\ref\FitFatu.dll
+E:\Projekty\FitFatu\FitFatu\FitFatu\bin\Debug\netstandard2.0\FitFatu.pdb
+E:\Projekty\FitFatu\FitFatu\FitFatu\obj\Debug\netstandard2.0\FitFatu.csproj.CoreCompileInputs.cache
+E:\Projekty\FitFatu\FitFatu\FitFatu\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Projekty\FitFatu\FitFatu\FitFatu\obj\Debug\netstandard2.0\FitFatu.csprojAssemblyReference.cache

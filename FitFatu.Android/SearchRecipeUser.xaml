@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.SearchRecipeUser">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Znajdź przepis" Margin="0,80,0,0" FontSize="25" HorizontalOptions="Center" TextColor="#286160" />
+
+            <Picker x:Name="ReciptsListUser" SelectedIndexChanged="ReciptsListUser_SelectedIndexChanged"  Focused="ReciptsListUser_Focused"  Title="Lista przepisów" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Margin="0" Opacity="1" 
+                    />
+            <Label x:Name="NameReciptUser" Text="Nazwa przepisu :" Margin="30,0,0,0"  />
+            <Label x:Name="PortionReciptUser" Text="Liczba porcji :"  Margin="30,0,0,0"/>
+            <Label x:Name="TimeReciptUser" Text="Czas do przygotowania :" Margin="30,0,0,0" />
+            <Label x:Name="LevelReciptUser" Text="Poziom przygotowania :" Margin="30,0,0,0" />
+            <Label x:Name="KcalReciptUser" Text="Wartość odżywcza :" Margin="30,0,0,0" />
+            <Label x:Name="ProteinReciptUser" Text="Białko ( na 100 g ):" Margin="30,0,0,0" />
+            <Label x:Name="FatsReciptUser" Text="Tłuszcz ( na 100 g ) :"  Margin="30,0,0,0"/>
+            <Label x:Name="CarbsReciptUser" Text="Węglowodany ( na 100 g ) :"  Margin="30,0,0,0"/>
+            <Label x:Name="IngredientsReciptUser" Text="Składniki :" Margin="30,0,0,0" />
+            <Label x:Name="PreparationReciptUser" Text="Przygotowanie :"  Margin="30,0,0,0"/>
+            <Button x:Name="AddToList" Clicked="AddToList_Clicked" BackgroundColor="#7FC31B" Text="Dodaj do listy" Margin="0,0,220,0" FlowDirection="MatchParent" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
+            <Button x:Name="GoBack" Clicked="GoBack_Clicked" Text="Powróć do menu" Margin="30,0,205,0" BackgroundColor="#957ED2" />
+            <Label x:Name="HiddenID" Text="" FontSize="0"  TextColor="White"/>
+            <Label x:Name="HiddenUser" Text="" FontSize="0" TextColor="White" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

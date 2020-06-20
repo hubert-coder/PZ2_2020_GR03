@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.MainPage"
+             BackgroundImageSource="Resources/drawable/background.jpg">
+
+    <StackLayout HorizontalOptions="Fill">
+        <!-- Place new controls here -->
+        <Label Text="Witaj w FitFatu!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" FontSize="27" TextColor="WhiteSmoke" />
+        
+        <Button x:Name="Guest" Clicked="Guest_ClickedAsync" Text="Przeglądaj jako gość" />
+        <Button x:Name="User" Clicked="User_ClickedAsync"  Text="Zaloguj się" />
+        <Button x:Name="Exit" Clicked="Exit_Clicked" Text="Zakończ" />
+
+    </StackLayout>
+
+</ContentPage>

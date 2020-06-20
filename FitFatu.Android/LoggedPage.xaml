@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.LoggedPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="MenuTitle" Text="Wybierz opcję :" FontSize="24" FontAttributes="Bold" Margin="110,0,0,0"
+                
+               />
+            <Button x:Name="SearchProduct" Clicked="SearchProduct_Clicked" Margin="50,0,50,5"  Text="Wyszukaj produkt" BackgroundColor="#2E6E47" />
+            <Button x:Name="SearchRecipe" Clicked="SearchRecipe_Clicked" Margin="50,0,50,5" Text="Wyszukaj przepis" BackgroundColor="#8EA736" />
+            <Button x:Name="AddRecipt" Clicked="AddRecipt_ClickedAsync" Margin="50,0,50,5" Text="Dodaj przepis" BackgroundColor="#676CA7" />
+            <Button x:Name="YourProducts" Clicked="YourProducts_Clicked" Margin="50,0,50,5"  Text="Twoje produkty" BackgroundColor="#6DD5AE" />
+            <Button x:Name="YourRecipt" Clicked="YourRecipt_Clicked" Margin="50,0,50,5"  Text="Twoje przepisy" BackgroundColor="#854074" />
+            <Button x:Name="RecipeLotteryUser" Clicked="RecipeLotteryUser_Clicked" Text="Losuj przepis" Margin="50,0,50,5" BackgroundColor="#EDD541" />
+            <Button x:Name="CalculateBMI" Clicked="CalculateBMI_Clicked"  Margin="50,0,50,5" Text="Oblicz BMI" BackgroundColor="#6B8985" />
+            <Button x:Name="About" Clicked="About_Clicked" Margin="50,0,50,5" Text="O autorze" BackgroundColor="#E4E83E" />
+            <Button x:Name="LogoutUser" Clicked="LogoutUser_Clicked"  Margin="50,0,50,5" Text="Zakończ" BackgroundColor="#DFBC3C" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

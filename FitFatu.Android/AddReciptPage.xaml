@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.AddReciptPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dodaj przepis!" FontSize="24"
+                
+                HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" TextColor="#4B56DC" />
+
+            <Label Text="Nazwa przepisu  : " FontSize="19" Margin="30,0,0,0" />
+            <Entry x:Name="ReciptName" Keyboard="Chat" Completed="ReciptName_CompletedAsync" Placeholder="Podaj nazwę..." Margin="30,0" />
+            <Label Text="Przygotowanie : " FontSize="19" Margin="30,0,0,0" />
+
+            <Entry x:Name="ReciptText"  Keyboard="Chat" Completed="ReciptText_CompletedAsync"  Placeholder="Opisz przygotowanie" Margin="30,0" />
+          <Button x:Name="SendRecipt" Text="Dodaj do bazy" Clicked="SendRecipt_ClickedAsync" Margin="80,50,80,0" BackgroundColor="#C6DC5D" />
+            <Button x:Name="GoBack" Clicked="GoBack_Clicked" Text="Wróć do menu" Margin="75,30,75,0" BackgroundColor="#57E990" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitFatu.SearchProduct">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Znajdź produkt" Margin="0,80,0,0" FontSize="25" HorizontalOptions="Center" TextColor="#49B645" />
+
+            <Picker x:Name="ProductsName" Title="ListaProduktow" SelectedIndexChanged="ProductsName_SelectedIndexChanged" Focused="ProductsName_Focused"  HorizontalOptions="CenterAndExpand" VerticalOptions="End" 
+             />
+
+            <Label x:Name="NameProduct" Text="Nazwa : " Margin="30,20,0,0" />
+            <Label x:Name="KcalProduct" Text="Kcal :" Margin="30,0,0,0" />
+            <Label x:Name="ProteinProduct" Text="Protein : " Margin="30,0,0,0" />
+            <Label x:Name="FatsProduct" Text="Fats : "  Margin="30,0,0,0"/>
+            <Label x:Name="CarbsProduct" Text="Carbs : " Margin="30,0,0,0" />
+
+            <Button x:Name="PowrotMenuGosc" BackgroundColor="#E2E224" Clicked="PowrotMenuGosc_Clicked" Text="Wróć do menu" Margin="30,50,200,0" 
+                    />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
